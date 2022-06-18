@@ -1,4 +1,18 @@
 /*Чем мы занимаемся*/
+.section-about {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+      padding-top: 0;
+    }
+}
+
+.about {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .about__item {
     position: relative;

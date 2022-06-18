@@ -1,5 +1,4 @@
 /*Подвал*/
-
 .bg-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,12 +6,39 @@
     background-color: #2F303A;
 }
 
-.logo-white {
-    color: var(--primary-white-color);
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+      margin-left: 76px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+        align-items: flex-start;
+    }
 }
+
+.footer__item {
+    margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0;
+    }   
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
+}
+
 .white {
     color: #FFFFFF99;
 }
+
 .footer__adress {
     font-style: normal;
     margin-top: 20px;
@@ -20,27 +46,23 @@
 .address-list {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-}
+    letter-spacing: 0.03em; 
+    text-align: center;
 
-.footer__item {
-    margin-bottom: 9px;
-    &:last-child {
-        margin-bottom: 0;
-    }    
-}
-
-.footer {
-    margin-right: 70px;
-}
-
-.bg-group {
-    align-items: baseline;
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+       text-align: start;
+    }
 }
 
 /*Фopма футер*/
+.send {
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 93px;
+      }
+}
 .send-text {
     font-weight: 700;
     font-size: 14px;
@@ -48,17 +70,32 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    
+    text-align: center;
+
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+       text-align: start;
+      }
 }
 
 .form-send {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        flex-direction: row;
+    
+      }
 }
  .input-sent {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
+
+    margin-bottom: 20px;
     
     font-size: 16px;
     line-height: 1.25;
@@ -74,6 +111,10 @@
        outline: 0;
        border-color: var(--primary-white-color);
  }
+
+ @media screen and (min-width: 1200px) {
+   width: 358px;
+  }
  }
 
 .input-sent::placeholder {
@@ -111,5 +152,3 @@
 .icon-send {
       margin-left: 10px;
   }
-
- 

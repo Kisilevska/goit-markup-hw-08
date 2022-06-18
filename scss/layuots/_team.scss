@@ -3,13 +3,53 @@
     background-color:  #F5F4FA;
 }
 
+.team {
+    @media screen and (min-width: 480px) {
+        display: block;
+      }
+
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+
 .team__item {
     background-color: var(--primary-white-color);
 
-    margin-right: 30px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        margin-bottom: 30px;
+        &:last-child { 
+            margin-bottom: 0;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;
+    
+          width: 354px;
+          margin-right: 15px;
+          margin-left: 15px;
 
-    &:last-child {
-        margin-right: 0;
+          &:last-child { 
+            margin-bottom: 30px;
+        }
+         
+          flex-basis: calc(100% / 2 - 30px);
+    }
+    
+    @media screen and (min-width: 1200px) {        
+        width: 270px;       
     }
 }
 
@@ -19,6 +59,18 @@
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+      }
+    
+        @media screen and (min-width: 768px) {
+          width: 354px;
+       }
+    
+       @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
 }
 .team__title {
     font-size: 16px;

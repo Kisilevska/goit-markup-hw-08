@@ -20,37 +20,105 @@
       <div class="container header__container"> 
 
          <a class="logo" href="./index.html">Web<span class="logo__dark">Studio</span></a>
-        <nav class="nav">
-           <ul class="nav__list">
-            <li class="nav__item"> 
-                <a href="./index.html" class="nav__link nav__link--current" >Студия</a>
-             </li>
-             <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфолио</a>
-             </li>
-             <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
-             </li> 
-           </ul>
-        </nav>
 
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use>
-            </svg>  
-            info@devstudio.com</a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:380961111111" class="contacts__link">
-            <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-            </svg>  
-            +38 096 111 11 11</a>
-        </li>
-    </ul></div> 
-</div>
+         <button  class="menu-toggle js-open-menu"
+         aria-expanded="false"
+         aria-controls="mobile-menu">
+         <svg class="menu__header" width="40" height="40">
+            <use href="./images/sprite.svg#menu_header"></use>
+         </svg>
+    </button>
+        <nav class="nav menu">
+                <ul class="nav__list">
+                 <li class="nav__item"> 
+                     <a href="./index.html" class="nav__link nav__link--current" >Студия</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Контакты</a>
+                  </li> 
+                </ul>
+             </nav>
+     
+           <ul class="contacts ">
+             <li class="contacts__item">
+               <a href="mailto:info@devstudio.com" class="contacts__link">
+                 <svg class="contacts__icon" width="16" height="12">
+                     <use href="./images/sprite.svg#envelope"></use>
+                 </svg>  
+                 info@devstudio.com</a>
+             </li>
+             <li class="contacts__item">
+               <a href="tel:380961111111" class="contacts__link">
+                 <svg class="contacts__icon" width="10" height="16">
+                     <use href="./images/sprite.svg#smartphone"></use>
+                 </svg>  
+                 +38 096 111 11 11</a>
+             </li>
+         </ul>
+        </div>
+       
+     </div>
+
+
+<!--Мобильное меню-->   
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link  mobile-menu__link--current"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        
+        <ul class="menu-contact">
+          <li class="menu-contact__item">
+            <a href="tel:+380961111111" class="menu-contact__tel">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contact__item" lang="en">
+            <a
+              href="mailto:info@devstudio.com"
+              class="menu-contact__mail"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter</a>
+            </li>
+
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook</a>
+            </li>
+
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+     <button class="menu-toggle js-close-menu">
+        <svg class="close_header" width="40" height="40">
+            <use href="./images/sprite.svg#close_header"></use>
+        </svg>
+     </button>
+    </div>
+    
+
     </header>
 
     <main>
@@ -60,7 +128,7 @@
             <div class="container"> 
                 <h1 class="hero__title">Эффективные решения <br/>для вашего бизнеса<br/></h1>
                 <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
-                  
+            
                   <!--Модальное окно-->
 
                 <div data-modal class="backdrop is-hidden"> 
@@ -129,9 +197,9 @@
                             </svg>
                         </button>
                     </div>
-                </div>
+                </div> 
             </div>
-        </section>
+        </section> 
                    <!--Особенности-->
 
         <section class="section">
@@ -147,7 +215,7 @@
                     <h3 class="feature__subtitle">Внимание к деталям</h3>
                     <p class="feature__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="feature__item item">
+                <li class="feature__item">
                     <div class="feature__group">
                         <svg class="feature__icon" width="70" height="70">
                             <use href="./images/sprite.svg#clock"></use>
@@ -156,7 +224,7 @@
                     <h3 class="feature__subtitle">Пунктуальность</h3>
                     <p class="feature__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="feature__item item">
+                <li class="feature__item">
                     <div class="feature__group">
                         <svg class="feature__icon" width="70" height="70">
                             <use href="./images/sprite.svg#diagram"></use>
@@ -165,7 +233,7 @@
                     <h3 class="feature__subtitle">Планирование</h3>
                     <p class="feature__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="feature__item item">
+                <li class="feature__item">
                     <div class="feature__group">
                         <svg class="feature__icon" width="70" height="70">
                             <use href="./images/sprite.svg#astronaut"></use>
@@ -176,11 +244,11 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> 
 
                    <!--Чем мы занимаемся-->
 
-        <section class="section">
+        <section class="section-about section">
             <div class="container"> 
             <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="about">
@@ -204,7 +272,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
                        <!--Наша команда-->
 
         <section class="section section__team">
@@ -434,9 +502,10 @@
             </ul>
             </div>
         </section>
-
+    
 
                       <!--Постоянные клиенты-->
+
         <section class="section">
             <div class="container"> 
                 <h2 class="section__title">Постоянные клиенты</h2>
@@ -486,34 +555,34 @@
                 </ul>
                         
             </div>
-        </section>         
+        </section>       
     </main>
 
                       <!--Подвал-->
 
     <footer class="bg-footer">
-        <div class="container bg-group"> 
+     <div class="container bg-group"> 
         <div class="footer">
-            <a class="logo link" href="./index.html">Web<span class="logo-white link">Studio</span></a>
-        <address class="footer__adress">
-            <ul class="address-list list">
-                <li class="item footer__item">
-                    <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="address logo-white link">г. Киев, пр-т
+            <a class="logo" href="./index.html">Web<span class="logo__white">Studio</span></a>
+          <address class="footer__adress">
+            <ul class="address-list">
+                <li class="footer__item">
+                    <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="address logo__white">г. Киев, пр-т
                     Леси Украинки, 26</a> </li>
-                <li class="item footer-item">
-                  <a href="mailto:info@devstudio.com" class="address white link">info@devstudio.com</a>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="address white">info@devstudio.com</a>
                 </li>
-                <li class="item footer__item">
-                  <a href="tel:380961111111" class="address white link">+38 096 111 11 11</a>
+                <li class="footer__item">
+                  <a href="tel:380961111111" class="address white">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </address>
-    </div>
-    <div class="join-group">
+          </address>
+        </div>
+        <div class="join-group">
         <p class="join-group__text">присоединяйтесь</p>
-        <ul class="join-group__list list">
+        <ul class="join-group__list">
             <li class="join-group__item">
-                <a class="join-group__link link" 
+                <a class="join-group__link" 
                    href=""
                    target="_blank"
                    rel="noopener noreferrer"
@@ -524,7 +593,7 @@
                 </a>
             </li>
             <li class="join-group__item"> 
-                <a class="join-group__link link"
+                <a class="join-group__link"
                    href=""
                    target="_blank"
                    rel="noopener noreferrer"
@@ -535,7 +604,7 @@
                 </a>
             </li>
             <li class="join-group__item">
-                <a class="join-group__link link"
+                <a class="join-group__link"
                    href=""
                    target="_blank"
                    rel="noopener noreferrer"
@@ -546,7 +615,7 @@
                 </a>
             </li>
             <li class="join-group__item">
-                <a class="join-group__link link"
+                <a class="join-group__link"
                    href=""
                    target="_blank"
                    rel="noopener noreferrer"
@@ -574,7 +643,16 @@
          </form>
       </div>
         </div>
-    </footer>
+    </footer> 
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

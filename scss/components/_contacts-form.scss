@@ -91,7 +91,7 @@
     }
     &::placeholder {
         font-size: 14px;
-        line-height: 1.14;
+        line-height: 1.17;
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
@@ -99,7 +99,11 @@
     &:not(:placeholder-shown) {
         color: #212121;
     }
-    
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+      }
 }
 
 
@@ -117,14 +121,20 @@ textarea {
     justify-content: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
 
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
 
     transition: background-color var(--duration) var(--timing-function);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.01em;
+      }
 }
 
 .modal-form__custom-checkbox {
