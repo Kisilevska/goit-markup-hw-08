@@ -9,9 +9,18 @@
     }
     
     .project__item {
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 3 * 30px) / 3);
+        }
+        /*
         margin-right: 30px;
         margin-bottom: 30px;
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);*/
     }
     
     .project__link {
@@ -26,6 +35,11 @@
        }
     }
     
+.project__img {
+    width: 100%;
+    height: 100%;
+}
+
     .project__title {
         font-size: 18px;
         font-weight: 700;

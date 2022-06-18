@@ -9,9 +9,6 @@
    @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: -15px;
-    margin-right: -15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -32,15 +29,8 @@
       display: flex;
       flex-wrap: wrap;
 
-      width: 354px;
-      margin-right: 15px;
-      margin-left: 15px;
-      
-      &:last-child { 
-        margin-bottom: 30px;
-      }
-     
-      flex-basis: calc(100% / 2 - 30px);
+      margin: 15px;
+      width: calc((100% - 2* 30px) / 2);
    }
 
    @media screen and (min-width: 1200px) {
@@ -80,6 +70,6 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
-      width: 450px; 
+      width: 100%; 
     }
 }

@@ -2,14 +2,10 @@
 
 .clients {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media screen and (min-width: 480px) {
-        flex-wrap: wrap; 
-        margin-left: -15px;
-        margin-right: -15px;
-      }
+    //align-items: center;
+   // justify-content: center;
+    flex-wrap: wrap; 
+    margin: -15px;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -17,22 +13,11 @@
 
 }
 .clients__item {
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        margin-bottom: 30px;
-        width: 210px;
-
-      margin-right: 15px;
-      margin-left: 15px;
-      margin-bottom: 30px;
-     
-      flex-basis: calc(100% / 2 - 30px);
-   }
-      
-    
-    @media screen and (min-width: 768px) { 
-          flex-basis: calc(100% / 3 - 30px);
-    }
+     width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+@media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
     
     @media screen and (min-width: 1200px) {
         width: 270px;
@@ -44,10 +29,8 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 480px) {
-        width: 210px;
-        height: 92px;
-      }
+    //width: 210px;
+    height: 92px;
 
    @media screen and (min-width: 768px) {
     width: 226px;
