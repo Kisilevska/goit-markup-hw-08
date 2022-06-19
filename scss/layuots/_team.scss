@@ -35,17 +35,15 @@
           display: flex;
           flex-wrap: wrap;
     
+         
           width: 354px;
           margin-right: 15px;
           margin-left: 15px;
-
-          &:last-child { 
+        
+          &:last-child {
             margin-bottom: 30px;
+          }
         }
-         
-          flex-basis: calc(100% / 2 - 30px);
-    }
-    
     @media screen and (min-width: 1200px) {        
         width: 270px;       
     }
