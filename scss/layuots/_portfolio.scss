@@ -28,7 +28,7 @@
         }
     }
     
-    .project__link {
+.project__link {
         display: block;
         transition: box-shadow var(--duration) var(--timing-function);
        &:hover,
@@ -38,7 +38,12 @@
                        1px 4px 6px rgba(0, 0, 0, 0.16);
        
        }
-    }
+        @media screen and (min-width: 768px) {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+}
     
 .project__img {
     width: 100%;
@@ -64,7 +69,7 @@
     }
     
     .project-blok {
-        
+        flex-grow: 1;
         padding: 20px 24px;
     
         border-right: 1px solid #EEEEEE;
