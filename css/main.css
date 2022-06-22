@@ -1747,7 +1747,7 @@ textarea {
     margin: 15px;
   }
   .project__item:last-child {
-    margin-bottom: auto;
+    margin-bottom: 15px;
   }
 }
 

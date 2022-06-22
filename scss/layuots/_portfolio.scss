@@ -19,8 +19,8 @@
             width: calc((100% - 2 * 30px) / 2);
             margin: 15px;
             &:last-child {
-                    margin-bottom: auto;
-            }
+                    margin-bottom: 15px;
+                }
         }
         
         @media screen and (min-width: 1200px) {
